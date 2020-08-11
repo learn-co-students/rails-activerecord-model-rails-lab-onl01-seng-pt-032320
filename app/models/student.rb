@@ -1,13 +1,12 @@
 class Student < ActiveRecord::Base
 
-    # def to_s
-    #     str = ""
-    #     str.concat("first_name, last_name")
-    #     str
-    # end
-
-    def to_s
-        @student = Student.create!(first_name: " ", last_name: " ")
+    def to_s #instance method
+        first_name + " " + last_name
+        # str = ""
+        # self #helps us see whole object
+        # binding.pry
+        # str.concat("first_name, last_name")
+        # str
     end
   end
   
